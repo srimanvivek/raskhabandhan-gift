@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090711">
+  <title>Secret Rakhi Mission | For Didi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Kalam:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="particles"></div>
+
+  <main class="app">
+    <!-- SCREEN 1 -->
+    <section class="screen active" id="introScreen">
+      <div class="eyebrow">CLASSIFIED RAKHI OPERATION</div>
+      <div class="orb">🎁</div>
+      <h1>Something special<br><span>is waiting for you.</span></h1>
+      <p class="sub">A tiny digital mission prepared exclusively for Didi.</p>
+
+      <div class="terminal">
+        <div><span class="dot"></span> SYSTEM ONLINE</div>
+        <p id="bootText">Preparing your surprise...</p>
+      </div>
+
+      <button class="primary-btn" id="startBtn">START MISSION <span>→</span></button>
+      <p class="tiny">Tip: headphones recommended 🎧</p>
+    </section>
+
+    <!-- SCREEN 2 -->
+    <section class="screen" id="verifyScreen">
+      <div class="hud">
+        <span>MISSION 01</span><span>ACCESS: VERIFIED</span>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-line"></div>
+        <div class="scan-icon">👤</div>
+        <div class="eyebrow">IDENTITY VERIFICATION</div>
+        <h2>Recipient detected.</h2>
+        <p>Designation: <strong>DIDI</strong></p>
+
+        <div class="status-list">
+          <div><span>Rakhi status</span><b>✓ VERIFIED</b></div>
+          <div><span>Gift status</span><b class="locked">🔒 LOCKED</b></div>
+          <div><span>Brother's permission</span><b>✓ OBVIOUSLY</b></div>
+        </div>
+      </div>
+
+      <button class="primary-btn" id="verifyBtn">PROCEED <span>→</span></button>
+    </section>
+
+    <!-- SCREEN 3 -->
+    <section class="screen" id="luckScreen">
+      <div class="hud">
+        <span>MISSION 02</span><span>LUCK ENGINE</span>
+      </div>
+
+      <div class="luck-intro">
+        <div class="dice">🎲</div>
+        <div class="eyebrow">ONE CONDITION</div>
+        <h2>Gift milega...</h2>
+        <p>lekin pehle <strong>bhagya aazmaye.</strong> 😌</p>
+        <button class="primary-btn" id="luckBtn">🎲 BHAGYA AAZMAYE</button>
+      </div>
+
+      <div class="luck-result" id="luckResult">
+        <div class="spinner" id="spinner">?</div>
+        <p id="luckText">Your luck is loading...</p>
+      </div>
+    </section>
+
+    <!-- SCREEN 4 -->
+    <section class="screen" id="projectsScreen">
+      <div class="hud">
+        <span>MISSION 03</span><span>PROJECT LAB</span>
+      </div>
+
+      <div class="project-heading">
+        <div class="eyebrow">RANDOM PROJECT GENERATOR</div>
+        <h2>Let's see what destiny picked.</h2>
+        <p>Not everything here is the gift. Obviously. 😏</p>
+      </div>
+
+      <div class="project-grid" id="projectGrid"></div>
+
+      <div class="project-action">
+        <button class="secondary-btn" id="shuffleBtn">↻ TRY ANOTHER</button>
+        <button class="primary-btn hidden" id="continueBtn">CONTINUE →</button>
+      </div>
+    </section>
+
+    <!-- SCREEN 5 -->
+    <section class="screen mystery-screen" id="mysteryScreen">
+      <div class="hud">
+        <span>FINAL MISSION</span><span>CLASSIFIED</span>
+      </div>
+
+      <div class="mystery-wrap">
+        <div class="spotlight"></div>
+        <div class="mystery-box" id="mysteryBox">
+          <div class="box-lid"></div>
+          <div class="box-body">?</div>
+          <div class="box-glow"></div>
+        </div>
+
+        <div class="eyebrow">FINAL OBJECTIVE</div>
+        <h2>THE MYSTERY BOX</h2>
+        <p>Whatever is inside... you earned it.</p>
+
+        <div class="lock-status">🔒 <span>SEALED</span></div>
+        <button class="primary-btn" id="openBtn">OPEN MYSTERY BOX</button>
+      </div>
+    </section>
+
+    <!-- SCREEN 6 -->
+    <section class="screen reveal-screen" id="revealScreen">
+      <div class="confetti" id="confetti"></div>
+
+      <div class="reveal-content">
+        <div class="success-badge">✓ UNLOCKED</div>
+        <div class="eyebrow">MISSION COMPLETE</div>
+        <h1>GIFT<br><span>GRANTED!</span></h1>
+        <p class="reveal-sub">Okay Didi... the secret is finally out. 🎉</p>
+
+        <div class="gift-gallery" id="giftGallery">
+          <div class="photo-placeholder">
+            <span>📸</span>
+            <small>YOUR GIFT PHOTO</small>
+            <p>Replace this with your money/gift image.</p>
+          </div>
+          <div class="photo-placeholder">
+            <span>💰</span>
+            <small>ANOTHER PHOTO</small>
+            <p>Add more photos in the JavaScript file.</p>
+          </div>
+        </div>
+
+        <div class="message-card">
+          <div class="quote-mark">“</div>
+          <p id="finalMessage">
+            Mission complete, Didi.<br><br>
+            You officially unlocked your Rakhi gift.
+            And yes... this time your annoying brother actually planned something. 😂<br><br>
+            Happy Raksha Bandhan! ❤️
+          </p>
+          <div class="signature">— Your Brother</div>
+        </div>
+
+        <button class="music-btn" id="musicBtn">♫ PLAY THE SURPRISE SONG</button>
+        <p class="footer-note">Made with questionable amounts of planning & sibling love ❤️</p>
+      </div>
+    </section>
+  </main>
+
+  <audio id="bgMusic" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
